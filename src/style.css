@@ -8,6 +8,10 @@ body {
   background-color: rgb(207, 203, 240);
 }
 
+h2 {
+  text-align: center;
+}
+
 .feedback-heading-button-wrapper {
   display: flex;
   flex-direction: column;
@@ -127,4 +131,81 @@ h2 {
 #submit-purple {
   color: #fff;
   background-color: rgba(117, 89, 235);
+}
+
+@media screen and (max-width: 1140px) {
+  .modal-wrapper {
+    width: 54vw;
+  }
+
+  .modal-wrapper h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .modal-wrapper {
+    width: 80vw;
+    height: 39vh;
+  }
+
+  .feedback-heading-button-wrapper h2 {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .modal-wrapper h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .modal-wrapper {
+    width: 80vw;
+    height: 39vh;
+  }
+
+  .modal-wrapper h2 {
+    font-size: 18px;
+  }
+
+  .feedback-heading-button-wrapper h2 {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .modal-wrapper {
+    width: 90vw;
+  }
+
+  .modal-wrapper h2 {
+    font-size: 18px;
+  }
+
+  .feedback-heading-button-wrapper h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .modal-wrapper {
+    width: 95vw;
+  }
+
+  .modal-wrapper h2 {
+    font-size: 15px;
+  }
+
+  .feedback-heading-button-wrapper h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .li-wrapper li button {
+    width: 23px;
+    height: 23px;
+  }
 }
