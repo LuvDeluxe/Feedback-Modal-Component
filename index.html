@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/script.js" defer></script>
   <title>Feedback Modal Component</title>
-
 </head>
 
 <body>
   <section class="feedback-heading-button-wrapper">
     <h2>Please let us know what do you think about the service provided. </h2>
-    <button class="feedback-button">Leave Feedback</button>
+    <button class="feedback-button" id="feedbackbtn">Leave Feedback</button>
   </section>
-  <section class="modal-wrapper">
+  <section class="modal-wrapper hidden" id="feedback-modal">
     <div class="close-modal-wrapper">
       <span class="close-modal">X</span>
     </div>
@@ -39,7 +39,7 @@
       </div>
       <div class="submit-wrapper">
         <form>
-          <button>Cancel</button>
+          <button id="cancel-button">Cancel</button>
           <button id="submit-purple">Submit</button>
         </form>
       </div>

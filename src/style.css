@@ -27,7 +27,6 @@ h2 {
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
-  cursor: pointer;
   transition: background 0.3s ease;
   font-weight: bold;
   margin-top: 2rem;
@@ -52,6 +51,12 @@ h2 {
   flex-direction: column;
   border-radius: 12px;
   padding: 25px;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+  display: none;
+  z-index: 1000;
+  position: relative;
 }
 
 .close-modal-wrapper {
@@ -208,4 +213,15 @@ h2 {
     width: 23px;
     height: 23px;
   }
+}
+
+/* Modal Handling */
+.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Buttons class to apply */
+.li-wrapper li button.selected {
+  background-color: white;
 }
